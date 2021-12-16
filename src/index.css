@@ -359,6 +359,18 @@ a {
         font-size: 18px !important;
     }
 }
+@media (max-width: 485px) {
+    .contactGroup {
+        display: block!important;
+        text-align: start;
+    }
+    .contactGroup img{
+       /*display: none;*/
+    }
+    .contactGroup h4 {
+       padding: 5px !important;
+    }
+}
 @media (max-width: 450px){
     .cartonWidth img{
         width: 100% !important;

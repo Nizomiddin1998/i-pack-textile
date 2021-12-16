@@ -20,7 +20,7 @@ export default function Footer() {
                         <img src={InstagramIcon} alt="instagram"/>
                     </div>
                 </div> 
-                <div className='col-sm-6 my-3 col-md-4'>
+                <div className='col-sm-6 contactGroup my-3 col-md-4'>
                     <h4 ><img src={iconPhone} alt="iconPhone"/> <a href="tel:+998903240444"> +99890 324 0444</a></h4>
                     <h4 ><img width={'30'} height={'30'} style={{color: "red"}} src={MobilIcon} alt="iconPhone"/> <a href="tel:+998933760444"> +99893 376 0444</a></h4>
                     <h4 className='mt-4'><img src={iconMail} alt="iconMail"/>
