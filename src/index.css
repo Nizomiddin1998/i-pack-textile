@@ -1,13 +1,679 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --primary_color: #04165E;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Jost", sans-serif !important;
+}
+
+@font-face {
+    font-family: SF Pro Display;
+    src: url(Fonts/sf_sans_pro/SFPRODISPLAYMEDIUM.OTF);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.Navbar {
+    background-color: #fff;
+    width: 100%;
+    padding: 25px !important;
+}
+
+.Navbar ul {
+    display: flex;
+    align-items: center !important;
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar li {
+    list-style-type: none;
+    padding: 10px;
+    color: #272496;
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.Navbar a {
+    color: #272496;
+}
+
+.Navbar .phoneNumber {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #3330A7;
+    width: 180px;
+    padding: 10px 15px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 13px;
+}
+
+.phoneNumber a {
+    color: #fff !important;
+}
+
+.phoneNumber:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.Main {
+    height: 500px;
+    background: #3330A7;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.Main .PhoneZ {
+    background: #FDC619;
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.Main .PhoneZ a {
+    text-decoration: none;
+    color: #272496;
+}
+
+.Main .PhoneZ:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+.Main h1 {
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 40px;
+}
+
+.Main h3 {
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    width: 70%;
+    margin: 45px 0;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+    width: 100%;
+    box-sizing: border-box !important;
+}
+
+.AboutPage img {
+    width: 90%;
+}
+
+.AboutPage p {
+    font-family: "DM Sans", sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 18px;
+    color: #9A9A9A;
+}
+
+@media (max-width: 1100px) {
+    .Footer h1 {
+        font-size: 40px !important;
+    }
+
+    .logoImg {
+        width: 150px !important;
+    }
+
+    .Footer h3, h4 {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 1020px) {
+    .list_navbar {
+        display: none !important;
+    }
+
+    .phoneNumber {
+        display: none !important;
+    }
+
+    .navbar_btn {
+        display: inline-block !important;
+    }
+
+    .btn_menu {
+        font-size: 35px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .cartonImg img {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    /*#shortWidth {*/
+    /*    width: 150px;*/
+    /*}*/
+
+    .tab_list {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .tab_list1 {
+        display: none !important;
+    }
+
+    .tab-btn {
+        margin: 100px 0 !important;
+        width: 45% !important;
+    }
+
+    .tab-btn button {
+        padding: 0;
+
+    }
+
+    .css-1gsv261 {
+        width: 100% !important;
+    }
+
+
+}
+
+@media (max-width: 770px) {
+
+
+    .Main {
+        height: 100% !important;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .Main h1 {
+        font-weight: 400 !important;
+        font-size: 36px !important;
+    }
+
+    .Main h3 {
+        width: 90% !important;
+        margin: 30px 0 !important;
+        margin-left: 30px !important;
+    }
+
+    .Main .vector {
+        display: none !important;
+    }
+
+    .CountColor {
+        width: 100px !important
+    }
+
+    .results h1 {
+        width: 30px !important;
+    }
+    .tabPanel .PanelImg1 {
+        width: 55%;
+    }
+    .tabPanel .PanelImg2 {
+        width: 45%;
+        /*height: 200px;*/
+    }
+
+    .tabPanel .PanelImg1 img{
+        width: 90% !important ;
+        height: 80% !important;
+        /*transform: scale(0.7);*/
+    }
+    .tabPanel .PanelImg2 img{
+        width: 90% !important ;
+        height: auto;
+        /*transform: scale(0.7);*/
+    }
+
+    .tabPanel .tab_panel {
+        width: 263px !important;
+        height: 350px !important;
+    }
+
+    .AboutPage p {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .cartonWidth {
+        width: 49% !important;
+    }
+    .cartonWidth img{
+        width: 100% !important;
+        height: 215px !important;
+    }
+    .cartonImg {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Advantages .col-md-4 {
+        width: 70%;
+        margin-left: 10px;
+        padding: 10px 0 !important;
+        justify-content: space-between !important
+    }
+
+    .communication {
+        height: 100% !important;
+    }
+
+    .communication .col-md-5 {
+        padding: 0 40px;
+    }
+
+    .Footer {
+        height: 100% !important;
+    }
+
+    .Footer h1 {
+        font-size: 30px !important;
+    }
+
+    .logoImg {
+        width: 140px !important;
+    }
+
+    .Footer h3, h4 {
+        font-size: 14px !important;
+    }
+
+    .Footer h4 {
+        margin: 0 !important;
+    }
+    .footerAddress{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .cartonImg img {
+        width: 100% !important;
+        height: 200px !important;
+    }
+    .cartonWidth p{
+        font-size: 12px !important;
+    }
+    .tabPanel .short {
+        display: none !important;
+    }
+
+    .Footer h1 {
+        margin-bottom: 20px !important;
+    }
+
+    .Footer .col-sm-6 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Footer .col-sm-12 {
+        text-align: center !important;
+    }
+
+    .footIcon {
+        width: 100% !important
+    }
+
+    .Footer .row {
+        text-align: center !important;
+    }
+
+    .pruduct_count {
+        width: 50% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .CountColor h1{
+        font-size: 30px !important;
+    }
+    .results .info {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 450px){
+    .cartonWidth img{
+        width: 100% !important;
+        height: 170px !important;
+    }
+    .tab_list2 {
+        display: inline !important;
+    }
+
+    .tab_list {
+        display: none !important;
+    }
+
+    .tab-btn {
+        margin: 0 10px !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .Logo {
+        width: 140px !important;
+    }
+
+
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    padding: 12px 0 !important;
+}
+
+.Tab_List {
+    padding: 5px 0 !important;
+}
+
+.titleFon h3 {
+    color: #727272;
+}
+
+.titleFon span {
+    width: 41px;
+    height: 3px;
+    background: #FFC100;
+}
+
+.titleFon p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.results .info {
+    font-family: "DM Sans", sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 33px;
+
+    color: #BDBCD8;
+
+}
+
+.short {
+    display: none;
+}
+
+.tab_list {
+    display: none;
+}
+
+.tab_list2 {
+    display: none;
+}
+
+/*.CountColor {*/
+/*    width: 167px*/
+/*}*/
+
+.CountColor h1 {
+    font-family: "DM Sans", sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 65px;
+    color: #3330A7;
+}
+
+.CountColor p {
+    margin: 15px 0;
+    width: 41px;
+    height: 3px;
+    background: #FFC100;
+}
+
+.css-1gsv261 {
+    border: 0 !important;
+}
+
+.tab-btn {
+    background-color: #eee !important;
+    margin: 0 10px !important;
+    color: #BDBCD8 !important;
+    width: 23%;
+}
+
+.tab-btn-focus {
+    background-color: var(--primary_color) !important;
+    color: white !important;
+}
+
+.tabPanel p {
+    color: var(--primary_color);
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.tabPanel .span {
+    margin-top: 500px !important;
+    display: inline;
+}
+
+.cartonImg div p {
+    font-family: "DM Sans", sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3330A7;
+
+}
+
+.cartonImg img {
+    width: 180px;
+    height: 180px;
+}
+
+
+.tabPanel .span p {
+    font-family: "DM Sans", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.231818px;
+    color: #9A9A9A;
+
+}
+
+
+.Обратная_связь {
+    border: none;
+    background: #6764BF;
+    width: 180px;
+    height: 41px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 21px;
+    font-size: 16px;
+    letter-spacing: -0.231818px;
+}
+
+.Обратная_связь:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+.radius1 {
+    position: relative;
+}
+
+.Advantages .radius {
+
+    width: 90px;
+    height: 89px;
+    background: var(--primary_color);
+    border-radius: 0 0 0 82.9787px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.Advantages .img-advant {
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    z-index: 2;
+}
+
+.Advantages .row p {
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    color: #3330A7;
+    padding: 0 20px;
+}
+
+.communication {
+    background: #04165E;
+    height: 310px;
+}
+
+.communication h1 {
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 42px;
+}
+
+.communication h2 {
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.communication input {
+    width: 100%;
+    height: 44.95px;
+    text-indent: 20px;
+    outline: none;
+}
+
+.communication button {
+    width: 100%;
+    height: 44.95px;
+    background: #FDC619;
+    border: none;
+}
+
+.Footer {
+    height: 40vh;
+}
+
+.Footer a {
+    color: #000;
+}
+
+.Footer a:hover {
+    color: #000;
+}
+
+.Footer h1 {
+    color: #04165E;
+    font-family: "Jost", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 42px;
+}
+
+
+.footIcon {
+    width: 50% !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: #868686; */
+}
+
+.logoImg {
+    margin-bottom: 20px;
+}
+
+
+::placeholder {
+    font-family: "SF Pro Display", sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127%;
+}
+
+.navbar_btn {
+    display: none;
+}
+
+.media_navbar {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100vh;
+    transition: all ease .5s;
+    background-color: #333;
+    opacity: 0.9;
+    color: #fff !important;
+}
+
+.media_navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.media_navbar h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.media_navbar img {
+    width: 30px;
+    color: #fff;
+}
+
+.media_navbar .btnClose {
+    font-size: 40px;
+    float: right;
 }
