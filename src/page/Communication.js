@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {doPost} from "../axiosP/servise";
 import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+// import PhoneInput from 'react-phone-number-input'
 
 export default function Communication() {
     const [users, setUsers] = useState('')
@@ -11,6 +11,8 @@ export default function Communication() {
     async function onSubmit(e) {
         e.preventDefault()
         postData({name: users, phone_number: phone})
+        setPhone('')
+        setUsers('')
     }
 
     async function postData(data) {
