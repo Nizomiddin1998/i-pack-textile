@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import {doPost} from "../axiosP/servise";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 
 export default function Communication() {
     const [users, setUsers] = useState('')
@@ -26,9 +28,16 @@ export default function Communication() {
                         <h2>Остались вопросы?</h2>
                         <h1>Связаться с нами</h1>
                     </div>
+
                     <div className='col-md-5 my-3'>
                         <form className='form-group mt-4' onSubmit={onSubmit}>
-                            <input className='my-2' onChange={(e) => setPhone(e.target.value)} value={phone} type="text"
+                            {/*<PhoneInput*/}
+                            {/*    defaultCountry="UZ"*/}
+                            {/*    value={phone}*/}
+                            {/*    onChange={setPhone}*/}
+                            {/*    placeholder={'Ваш номер'}*/}
+                            {/*/>*/}
+                            <input className='my-2' onChange={(e) => setPhone(e.target.value)} value={phone} type="number"
                                    placeholder='Ваш номер'/>
                             <input className='my-2' onChange={(e) => setUsers(e.target.value)} value={users} type="text"
                                    placeholder='Ваше имя'/>
