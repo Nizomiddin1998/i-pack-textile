@@ -643,6 +643,7 @@ a {
 
 .logoImg {
     margin-bottom: 20px;
+    color: #08084d;
 }
 
 
@@ -681,7 +682,8 @@ a {
 }
 
 .media_navbar img {
-    width:35px;
+    width:30px;
+    height: 30px;
     color: #fff!important;
 }
 

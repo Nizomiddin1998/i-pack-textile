@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import Logo from '../images/White2.png'
-import HeadPhone from '../images/headPhon.svg'
+import HeadPhone1 from '../images/headPhon.svg'
+import HeadPhone from '../images/HeadPhone.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -43,7 +44,7 @@ function Navbar() {
                             <h2 onClick={()=>setState(false)}><a href="#advanted">ПРЕМУЩЕСТВА</a></h2>
                             <h2 onClick={()=>setState(false)}><a href="#contact">КОНТАКТЫ</a></h2>
                             <h2 onClick={()=>setState(false)}><a href="#communicationId">ЗАКАЗАТЬ ЗВОНОК</a></h2>
-                            <h2><img style={{color: 'red'}} src={HeadPhone} alt="HeadPhone icon"/> +99890 324 04 44</h2>
+                            <h2><img style={{color: 'red'}} src={HeadPhone1} alt="HeadPhone icon"/> +99890 324 04 44</h2>
                             </div>
                         </div>
                         
